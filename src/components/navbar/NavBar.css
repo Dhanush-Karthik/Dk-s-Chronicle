@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 
-.navBar-icon:hover{
+.navBar-link:hover{
     color: var(--secondary-color);
 }
 

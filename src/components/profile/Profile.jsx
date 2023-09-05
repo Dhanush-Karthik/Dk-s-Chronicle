@@ -62,17 +62,19 @@ const Profile = () => {
             </div>
           </a>
           <a href="https://www.facebook.com/profile.php?id=100006168917057">
-          <div className="profile-icon">
-            <FaFacebookF size={"15px"} />
-          </div>
+            <div className="profile-icon">
+              <FaFacebookF size={"15px"} />
+            </div>
           </a>
         </div>
-        <div className="profile-button">
-          <div className="contactme-button">
-            <GrMail />
-            <div style={{ marginLeft: "10px" }}>Contact me</div>
+        <a href="#contact">
+          <div className="profile-button">
+            <div className="contactme-button">
+              <GrMail />
+              <div style={{ marginLeft: "10px" }}>Contact me</div>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
