@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import "./SkillCard.css";
 
-import { FaJava, FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaDocker } from "react-icons/fa";
+import { FaJava, FaReact, FaHtml5, FaNodeJs, FaDocker } from "react-icons/fa";
 import {BsGit } from "react-icons/bs";
 import {SiSpringboot, SiSpringsecurity} from "react-icons/si";
 

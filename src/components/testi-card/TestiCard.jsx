@@ -14,7 +14,7 @@ const TestiCard = ({data}) => {
       <div className="test-wrapper">
         <div className="testi-profile">
           <div className="testi-profile-photo">
-            <img className="testi-profile-photo" src={data.profile} width={"50px"} />
+            <img className="testi-profile-photo" alt="profile" src={data.profile} width={"50px"} />
           </div>
           <div className="testi-profile-details">
             <div className="testi-profile-name">{data.name}</div>

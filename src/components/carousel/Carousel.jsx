@@ -5,7 +5,7 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import TestiCard from "../testi-card/TestiCard";
 
 import adam from "../../img/adam.jpeg";
-import dhanush from "../../img/profile1.jpg";
+// import dhanush from "../../img/profile1.jpg";
 
 import "./Carousel.css";
 

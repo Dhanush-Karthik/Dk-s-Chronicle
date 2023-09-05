@@ -36,7 +36,7 @@ const Contact = () => {
       document.getElementById('firstNameError').textContent = "";
     }
 
-    if(lastName!="" && !firstNameRegex.test(lastName)){
+    if(lastName!=="" && !firstNameRegex.test(lastName)){
       isValid = false;
       document.getElementById('lastNameError').textContent = "Invalid Last Name";
     }else{
@@ -54,7 +54,7 @@ const Contact = () => {
       document.getElementById('emailError').textContent = "";
     }
 
-    if(phoneNumber!="" && !phoneNumberRegex.test(phoneNumber)){
+    if(phoneNumber!=="" && !phoneNumberRegex.test(phoneNumber)){
       isValid = false;
       document.getElementById('phoneNoError').textContent = "Invalid Phone Number";
     }else{

@@ -25,7 +25,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="profile-photo">
-          <img src={profile} alt="Profile-Photo" width={"90%"} />
+          <img src={profile} alt="Profile" width={"90%"} />
         </div>
         <div className="profile-name">
           <div>Dhanush Karthik K S</div>
