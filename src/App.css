@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --bg-color: #1F1F21;
+  --primary-color: #1F1F21;
+  --secondary-color:#29E88D;
+  --tertiary-color:#989898;
+  --border-color:#48484A;
+  --text:#F5F5F5;
+  --button-text:#050302;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
   min-height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.h-hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20%);
+  transition: all 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h-show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
+
+.v-hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(20%);
+  transition: all 1s;
+}
+
+a{
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+.v-show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media screen and (max-width:950px) {
+  .App{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+} 

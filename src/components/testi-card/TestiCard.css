@@ -1,0 +1,42 @@
+.testi-card{
+    width: 90%;
+    height: fit-content;
+    border: 1px solid var(--border-color);
+    border-radius: 40px;
+    margin: 40px 0px;
+}
+.test-wrapper{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:40px;
+}
+.testi-profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+.testi-profile-photo{
+    border-radius: 50%;
+}
+.testi-profile-details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.testi-profile-desig{
+    font-size: 13px;
+    color: var(--tertiary-color);
+}
+.testi-content{
+    font-size: 20px;
+    color: var(--text);
+    font-weight: bold;
+    text-align: justify;
+}

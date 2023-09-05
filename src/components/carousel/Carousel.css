@@ -1,0 +1,17 @@
+.carousel{
+    overflow: hidden;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-inner{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    transform: none !important; 
+    margin-left: 6%;
+    transition: all 0.3s;
+    width: 100%;
+}

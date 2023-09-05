@@ -1,0 +1,46 @@
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .timeline-outer {
+    border-left: 2px solid #333;
+  }
+  
+  .timeline-card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+  }
+  
+  /* Information about the timeline */
+  .timeline-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title of the card */
+  .timeline-title {
+    color: var(--tertiary-color);
+    position: relative;
+  }
+
+  .timeline-sub-title{
+    font-size: 30px;
+    color: var(--text);
+  }
+  
+  .timeline-content{
+    color: var(--tertiary-color);
+  }
+  .timeline-title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--tertiary-color);
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid var(--tertiary-color);
+  }

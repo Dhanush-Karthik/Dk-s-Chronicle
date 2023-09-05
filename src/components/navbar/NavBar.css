@@ -1,0 +1,48 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    right: 0;
+    height: 100vh;
+}
+.navBar-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 40px;
+    height: fit-content;
+    margin-right: 15px;
+}
+.navBar-icon{
+    color: var(--tertiary-color);
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.navBar-icon:hover{
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width:950px) {
+    .navBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        position: sticky;
+        bottom: 20px;
+        width: 100%;
+    }
+    .navBar-icons{
+        flex-direction: row;
+        width: fit-content;
+        gap: 20px;
+        padding: 5px 20px;
+        margin: 0px;
+    }
+}
