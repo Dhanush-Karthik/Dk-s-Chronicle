@@ -4,6 +4,10 @@
     border: 1px solid var(--border-color);
     border-radius: 40px;
     margin: 40px 0px;
+    background: rgba(31, 31, 33, 0.78);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }
 .test-wrapper{
     margin: 40px;
