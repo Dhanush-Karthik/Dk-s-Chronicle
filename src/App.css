@@ -9,6 +9,154 @@
   --text:#F5F5F5;
   --button-text:#050302;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+
+.intro-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 3em;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  
+  &::after {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    letter-spacing: 0.5em;
+    content: attr(data-identity);
+    color: var(--bg-color);
+    z-index: -1;
+    animation: animLetterSpacing 4500ms infinite ease-in-out;
+  }
+}
+.pen__lines-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+}
+
+.pen__line {
+  flex: 1;
+  border-right: solid 1px #EAEAF2;
+  opacity: 0.8;
+  position: relative;
+  text-align: center;
+}
+
+span {
+  /* font-family: "Libre baskerville"; */
+  /* font-style: italic; */
+  display: inline-block;
+  color: var(--secondary-color);
+  margin-left: 15px;
+}
+
+.skip {
+  position: relative;
+  top: 200px;
+  display: block;
+  width: 130px;
+  text-align: center;
+  margin: 50px auto 0;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Nunito';
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 0;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  transition: 0.2s ease;
+}
+.skip:hover{
+  background: #ddd;
+  color: #444;
+  border-color: #ddd;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+
+@keyframes animLetterSpacing {
+  0% {
+    letter-spacing: 2.5em;
+    opacity: 0;
+  }
+  
+  40% {
+		opacity: 1;
+    letter-spacing: 0.5em;
+  }
+  
+  70% {
+		letter-spacing: 0.75em;
+  }
+  
+  100% {
+    letter-spacing: 2.5em;
+  }
+}
+
+.intro-hidden{
+  transition: all ease-in-out 0.2s;
+  display: none;
+}
 .App{
   min-height: 100vh;
   width: 100vw;
