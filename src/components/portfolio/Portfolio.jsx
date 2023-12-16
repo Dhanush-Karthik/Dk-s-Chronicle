@@ -20,7 +20,7 @@ const Portfolio = () => {
         <div className="portfolio-icon">
           <BsGrid3X2Gap size={"18px"} />
         </div>
-        <div className="portfolio-icon-name">Portfolio</div>
+        <div className="portfolio-icon-name">PORTFOLIO</div>
       </div>
       <div className="portfolio-content">
         <ProjectHCard image={project1} title={"DK'S Chronicle"} subtitle={"A React Porfolio"} />

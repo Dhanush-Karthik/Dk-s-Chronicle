@@ -96,7 +96,7 @@ const Contact = () => {
     });
   }
   return (
-    <div ref={contactRef} className={`contact h-hidden ${inView?"h-show":"h-hidden"}`}>
+    <div ref={contactRef} id="contact" className={`contact h-hidden ${inView?"h-show":"h-hidden"}`}>
       <div className="contact-header">
         <div className="contact-icon">
           <FiMail size={"18px"} />
@@ -141,7 +141,7 @@ const Contact = () => {
             <div id="messageError" className="formError"></div>
           </div>
         </form>
-        <div id="contact" className="contact-form-button" onClick={handleSubmit}>
+        <div className="contact-form-button" onClick={handleSubmit}>
             Sumbit
         </div>
       </div>
