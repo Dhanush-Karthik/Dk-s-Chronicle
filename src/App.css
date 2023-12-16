@@ -26,7 +26,16 @@
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 1em;
+}
+.typing-demo1 {
+  width: 44ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1em;
 }
 
 @keyframes typing {
@@ -105,7 +114,7 @@ span {
   margin: 50px auto 0;
   cursor: pointer;
   color: #fff;
-  font-family: 'Nunito';
+  font-family: monospace;
   font-size: 20px;
   font-weight: 500;
   padding: 12px 0;
