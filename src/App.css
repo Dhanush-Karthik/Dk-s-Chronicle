@@ -20,8 +20,8 @@
 }
 
 .typing-demo {
-  width: 28ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  width: 29ch;
+  animation: test 2s ease-out forwards, typing 2s steps(22), blink .5s step-end infinite alternate, test 2s forwards;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -29,13 +29,30 @@
   font-size: 1em;
 }
 .typing-demo1 {
-  width: 44ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  width: 41ch;
+  visibility: hidden;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate, appearAndType 2s ease-out forwards;
+  animation-delay: 2s;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 1em;
+}
+
+@keyframes appearAndType {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes test {
+  100%{
+    border: none;
+  }
 }
 
 @keyframes typing {
@@ -100,11 +117,8 @@ section {
 }
 
 .typing-span {
-  /* font-family: "Libre baskerville"; */
-  /* font-style: italic; */
   display: inline-block;
   color: var(--secondary-color);
-  margin-left: 15px;
 }
 
 .skip {
@@ -123,7 +137,7 @@ section {
   transition: 0.2s ease;
 }
 .skip:hover{
-  background: #ddd;
+  background: #fff;
   color: #444;
   border-color: #ddd;
   cursor: pointer;

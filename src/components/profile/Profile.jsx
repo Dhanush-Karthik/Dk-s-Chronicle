@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Profile.css";
 
-import profile from "../../img/profile1.jpg";
+import profile from "../../img/profile.jpeg";
 
 import {
   FaGithub,
@@ -25,7 +25,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="profile-photo">
-          <img src={profile} alt="Profile" width={"90%"} />
+          <img src={profile} alt="Profile" width={"90%"}/>
         </div>
         <div className="profile-name">
           <div>Dhanush Karthik K S</div>
