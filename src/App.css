@@ -99,7 +99,7 @@ section {
   text-align: center;
 }
 
-span {
+.typing-span {
   /* font-family: "Libre baskerville"; */
   /* font-style: italic; */
   display: inline-block;

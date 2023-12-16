@@ -9,6 +9,7 @@ import Contact from '../contact/Contact';
 import Testimonials from '../testimonials/Testimonials';
 import Portfolio from '../portfolio/Portfolio';
 
+
 const Content = () => {
   return (
     <div className='content'>

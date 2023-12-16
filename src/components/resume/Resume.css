@@ -1,20 +1,22 @@
 .resume{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
     color: var(--text);
+    height: fit-content;
 }
 .resume-header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap:10px;
-    width: 100px;
-    height: 35px;
+    width: 95px;
+    height: 30px;
     border: 1px solid var(--border-color);
     border-radius: 20px;
-    padding-left: 10px;
-    margin: 50px 0px;
+    padding: 5px 5px;
+    margin-top: 50px;
 }
 .resume-icon{
     display: flex;
@@ -32,17 +34,12 @@
     font-weight: bolder;
     padding-top: 2px;
 }
-.resume-content{
-    margin-top: 0px;
-    margin-bottom: 30px;
-}
 .resume-content-header{
     color: var(--secondary-colortimeline-);
     font-size: 50px;
 }
 
-
-  .v-hidden{
+.v-hidden{
     opacity: 0;
     filter: blur(5px);
     transform: translateY(20%);
