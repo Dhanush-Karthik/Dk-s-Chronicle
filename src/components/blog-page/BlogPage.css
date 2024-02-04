@@ -1,0 +1,30 @@
+.blog-content {
+  width: 75%;
+  padding-bottom: 10%;
+  color: #fff;
+  font-size: 21px;
+  text-align: justify;
+}
+.blog-main-title {
+  font-size: 48px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: var(--secondary-color);
+  color: #fff;
+  text-transform: uppercase;
+}
+.blog-sub-title {
+  color: #fff;
+  font-size: 18px;
+  max-width: 70%;
+  text-align: center;
+}
+.blog-content-heading {
+  width: fit-content;
+  border-bottom: solid;
+  padding-bottom: 3px;
+  border-color: var(--secondary-color);
+}
+.blog-content-para {
+  margin: 20px 0px;
+}

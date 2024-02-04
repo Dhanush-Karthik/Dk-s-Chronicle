@@ -1,0 +1,127 @@
+{
+    "blogTitle":"Git Intro-playbook",
+    "description":"It is a simple but yet useful guide for beginners who are starting to learn functionalities and concepts of git.",
+    "blogContent":[
+        {
+            "index":"0",
+            "title":"heading",
+            "content":"Git"
+        },
+        {
+            "index":"1",
+            "title":"para",
+            "content":"Git is a distributed version control system (VCS) designed to manage changes in source code during software development. It allows multiple developers to work on the same codebase simultaneously while keeping track of changes, facilitating collaboration, and providing a history of the project's evolution."
+        },
+        {
+            "index":"2",
+            "title":"para",
+            "content":"To make the learning fun I have included link for Git visualiser where one can visualise how git works. Feel free to make use of it: "
+        },
+        {
+            "index":"3",
+            "title":"para",
+            "content":"https://git-school.github.io/visualizing-git/"
+        },
+        {
+            "index":"4",
+            "title":"heading",
+            "content":"How git is organized"
+        },
+        {
+            "index":"5",
+            "title":"para",
+            "content":"Git organizes the version control process using the following three components."
+        },
+        {
+            "index":"6",
+            "title":"para",
+            "content":"1. Working Directory"
+        },
+        {
+            "index":"7",
+            "title":"para",
+            "content":"2. Index or Staging"
+        },
+        {
+            "index":"8",
+            "title":"para",
+            "content":"3. Repository"
+        },
+        {
+            "index":"9",
+            "title":"para",
+            "content":"These components work together to manage changes, track history, and facilitate collaboration"
+        },
+        {
+            "index":"10",
+            "title":"heading",
+            "content":"Working Directory"
+        },
+        {
+            "index":"11",
+            "title":"para",
+            "content":"In Git, the working directory, also known as the working tree, refers to the directory on your local machine where you have all your project files. It's the place where you create, modify, and organize your code and other project-related files. The working directory is where you actively work on your project, making changes, adding new files, and editing existing ones."
+        },
+        {
+            "index":"12",
+            "title":"heading",
+            "content":"Initialize a git repository"
+        },
+        {
+            "index":"13",
+            "title":"para",
+            "content":"Initializing a repository involves setting up a new Git repository from scratch in a local directory. This is typically done when you're starting a new project or converting an existing project into a Git repository. During the initialization process, Git creates a hidden subdirectory called .git within the project directory. This subdirectory contains all the necessary information for version control, including the commit history, configuration settings, and more."
+        },
+        {
+            "index":"14",
+            "title":"para",
+            "content":"To initialize a new repository, you'll use the following steps."
+        },
+        {
+            "index":"15",
+            "title":"para",
+            "content":"1. Create a Remote Repository: Before you can push changes to a remote repository, you need to have a remote repository set up on a platform like GitHub, GitLab, or Bitbucket. You would typically create a remote repository through the web interface of the platform. If you used git init to make a fresh repo, you'll have no remote repo to push changes to. This can be done by the following command."
+        },
+        {
+            "index":"16",
+            "title":"para",
+            "content":"2. Initialise git in local:"
+        },
+        {
+            "index":"17",
+            "title":"para",
+            "content":"To initialise git in local system, use the following command:"
+        },
+        {
+            "index":"18",
+            "title":"code",
+            "content":"git init"
+        },
+        {
+            "index":"19",
+            "title":"heading",
+            "content":"3. Link the Remote Repository:"
+        },
+        {
+            "index":"20",
+            "title":"para",
+            "content":"After creating the remote repository and initialising the git in local, you need to establish a connection between your local repository and the remote repository. This is done by adding a remote reference. You can do this using the following command:"
+        },
+        {
+            "index":"21",
+            "title":"code",
+            "content":"git remote add <remote_name> <remote_repo_url>"
+        },
+        {
+            "index":"22",
+            "title":"para",
+            "content":"Pointing to the existing git repository can be done by adding the repository name to it."
+        },
+        {
+            "index":"23",
+            "title":"code",
+            "content":"git init <repository name>"
+        }
+    ],
+    "author":"Dhanush Karthik"
+}

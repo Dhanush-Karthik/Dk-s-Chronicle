@@ -1,49 +1,29 @@
 import { useState } from "react";
 import "./App.css";
-import Content from "./components/content/Content";
-import NavBar from "./components/navbar/NavBar";
-import Profile from "./components/profile/Profile";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import Home from "./components/home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Welcome from "./components/welcome/Welcome";
+import Stars from "./components/stars/Stars";
+import Blogs from "./components/blog/Blogs";
+import BlogPage from "./components/blog-page/BlogPage";
+import axios from 'axios';
+axios.defaults.baseURL = 'https://portfolio-backend-8e2z.onrender.com/';
 
 function App() {
-  const [intro, setIntro] = useState(true);
+  const [intro, setIntro] = useState(false);
 
   return (
     <>
-      <div className={`${intro ? "intro-wrapper" : "intro-hidden"}`}>
-        <div className="intro">
-          <div class="wrapper">
-            <div class="typing-demo">Hi! This is <span className="typing-span">Dhanush Karthik</span>, </div>
-            <div class="typing-demo1">Computer <span className="typing-span">Engineer</span> and Software <span className="typing-span">Developer</span>. </div>
-            <div class="skip" onClick={() => setIntro(false)}>
-              Know me
-            </div>
-          </div>
-        </div>
-      </div>
+      <Welcome intro={intro} setIntro={setIntro} />
+      <Stars />
       <div className={`${intro ? "intro-hidden" : "App"}`}>
-        <ul class="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div className="stars-container">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-        </div>
-        <Profile />
-        <Content />
-        <NavBar />
-        <ToastContainer />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home intro={intro} setIntro={setIntro} />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:id" element={<BlogPage />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   );
