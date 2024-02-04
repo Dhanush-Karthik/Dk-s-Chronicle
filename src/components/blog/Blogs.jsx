@@ -15,7 +15,7 @@ const Blogs = () => {
         console.log(blogs[0].blogTitle);
       })
       .catch(() => console.log("Something went wrong"));
-  }, []);
+  }, [blogs]);
 
   return (
     <div className="blog">

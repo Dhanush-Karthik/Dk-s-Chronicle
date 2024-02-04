@@ -18,7 +18,7 @@ const BlogPage = () => {
     ).catch(
         ()=> console.log("Something went wrong")
     )
-  },[])
+  },[id])
   return (
     <div className="blog">
       <div className="blog-container">
@@ -35,6 +35,7 @@ const BlogPage = () => {
                 if(item.title==="code"){
                     return <CodeViewer code={item.content} />
                 }
+                return null;
             })}
         </div>
       </div>
