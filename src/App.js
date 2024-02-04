@@ -10,7 +10,7 @@ import axios from 'axios';
 axios.defaults.baseURL = 'https://portfolio-backend-8e2z.onrender.com/';
 
 function App() {
-  const [intro, setIntro] = useState(false);
+  const [intro, setIntro] = useState(true);
 
   return (
     <>
