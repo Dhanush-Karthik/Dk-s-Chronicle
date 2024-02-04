@@ -30,18 +30,18 @@ const SkillCard = ({name,percentage}) => {
   return (
     <div className="skill-card">
       <div className="skill-card-icon">
-        {name==="java" && <FaJava size={"80px"} />}
-        {name==="react" && <FaReact size={"80px"} />}
-        {name==="html" && <FaHtml5 size={"80px"} />}
-        {name==="node" && <FaNodeJs size={"80px"} />}
-        {name==="git" && <BsGit size={"80px"} />}
-        {name==="docker" && <FaDocker size={"80px"} />}
-        {name==="spring-boot" && <SiSpringboot size={"80px"} />}
-        {name==="spring-security" && <SiSpringsecurity size={"80px"} />}
+        {name==="java" && <FaJava size={"80px"} color="29E88D"/>}
+        {name==="react" && <FaReact size={"80px"} color="29E88D"/>}
+        {name==="html" && <FaHtml5 size={"80px"} color="29E88D"/>}
+        {name==="node" && <FaNodeJs size={"80px"} color="29E88D"/>}
+        {name==="git" && <BsGit size={"80px"} color="29E88D"/>}
+        {name==="docker" && <FaDocker size={"80px"} color="29E88D"/>}
+        {name==="spring-boot" && <SiSpringboot size={"80px"} color="29E88D"/>}
+        {name==="spring-security" && <SiSpringsecurity size={"80px"} color="29E88D"/>}
       </div>
-      <div className="skill-card-text">
+      {/* <div className="skill-card-text">
         <span className="percentage" value={percentage}>0</span>%
-      </div>
+      </div> */}
     </div>
   );
 };

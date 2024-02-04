@@ -16,7 +16,7 @@ const Skills = () => {
       </div>
       <div className="skills-content">
         <div className="skills-content-header">
-          My <span className="highlight">Advantages</span>
+          My <span className="highlight">Skills</span>
         </div>
         <div className="skills-content-body">
           <div id={"skills"}  className="skills-content-cards">
