@@ -10,7 +10,7 @@ import axios from 'axios';
 axios.defaults.baseURL = 'https://portfolio-backend-8e2z.onrender.com/';
 
 function App() {
-  const [intro, setIntro] = useState(true);
+  const [intro, setIntro] = useState(false);
 
   return (
     <>
@@ -19,7 +19,7 @@ function App() {
       <div className={`${intro ? "intro-hidden" : "App"}`}>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home intro={intro} setIntro={setIntro} />} />
+            <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blogs/:id" element={<BlogPage />} />
           </Routes>

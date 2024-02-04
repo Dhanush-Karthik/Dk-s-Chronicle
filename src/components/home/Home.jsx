@@ -4,7 +4,7 @@ import Content from "../content/Content";
 import NavBar from "../navbar/NavBar";
 import { ToastContainer } from "react-toastify";
 
-const Home = ({intro, setIntro}) => {
+const Home = () => {
   return (
     <>
       <Profile />

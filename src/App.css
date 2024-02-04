@@ -140,10 +140,11 @@ section {
   background: #fff;
   color: #444;
   border-color: #ddd;
-  cursor: pointer;
-  z-index: 1;
 }
-
+.home-button{
+  display: flex;
+  gap: 50px;
+}
 
 
 @keyframes animLetterSpacing {

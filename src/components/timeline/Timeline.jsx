@@ -15,7 +15,7 @@ const Timeline = ({ infos }) => {
             {infos.map((info) => {
               return (
                 <>
-                  <h3 className="timeline-title" >{info.timeline}</h3>
+                  <h3 className="timeline-title">{info.timeline}</h3>
                   <div className="timeline-sub-title">
                     {info.header}
                   </div>
